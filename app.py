@@ -205,7 +205,7 @@ def gen_sh(
     clip_path = resolve_path("models/clip/clip_l.safetensors")
     t5_path = resolve_path("models/clip/t5xxl_fp8.safetensors")
     ae_path = resolve_path("models/vae/ae.sft")
-    output_dir = resolve_path("kaggle/working/")
+    output_dir = resolve_path("/kaggle/working/")
 
     ############# Optimizer args ########################
     if vram == "16G":

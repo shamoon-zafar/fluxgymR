@@ -205,7 +205,7 @@ def gen_sh(
     clip_path = resolve_path("models/clip/clip_l.safetensors")
     t5_path = resolve_path("models/clip/t5xxl_fp8.safetensors")
     ae_path = resolve_path("models/vae/ae.sft")
-    output_dir = resolve_path("/kaggle/working/")
+    output_dir = resolve_path("/kaggle/working/R")
 
     ############# Optimizer args ########################
     if vram == "16G":
@@ -260,7 +260,9 @@ def gen_sh(
   --model_prediction_type raw {line_break}
   --guidance_scale {guidance_scale} {line_break}
   --loss_type l2 {line_break}
-  --save_state {line_break}"""
+  --save_state {line_break}
+  --network_weights</kaggle/working/wnboy-000004.safetensors> {line_break}
+  --resume="/kaggle/working/wnboy-000004-state" {line_break}"""
     return sh
 
 def gen_toml(

@@ -261,10 +261,7 @@ def gen_sh(
   --guidance_scale {guidance_scale} {line_break}
   --loss_type l2 {line_break}
   --save_state {line_break}
-  --resume="/kaggle/working/wnboy-000004-state/" {line_break}
-  --initial_epoch 5
-  --initial_step 81
-  --skip_until_initial_step"""
+  --resume="/kaggle/working/wnboy-000004-state/" {line_break}"""
     return sh
 
 def gen_toml(

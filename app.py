@@ -262,7 +262,7 @@ def gen_sh(
   --loss_type l2 {line_break}
   --save_state {line_break}
   --network_weights</kaggle/working/wnboy-000004.safetensors> {line_break}
-  --resume="/kaggle/working/wnboy-000004-state" {line_break}"""
+  --resume="/kaggle/working/wnboy-000004-state/model.safetensors" {line_break}"""
     return sh
 
 def gen_toml(
